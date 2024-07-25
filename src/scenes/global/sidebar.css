@@ -1,0 +1,43 @@
+    .sidebar {
+        width: 300px;
+        background-color: #141b2d;
+        border-right: 1px solid #dee2e6;
+        padding: 20px;
+        position: fixed;
+        height: 100%;
+        transition: transform 0.3s ease;
+        color: white; /* Set the text color to white */
+    }
+    
+    .sidebar.closed {
+        transform: translateX(-100%);
+    }
+    
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    .sidebar-content {
+        margin-top: 40px;
+    }
+    
+    .sidebar img {
+        display: block;
+        margin: 0 auto 20px;
+    }
+    
+    .sidebar div {
+        margin-bottom: 20px;
+    }
+    
+    .sidebar label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
