@@ -1,14 +1,18 @@
-    import { Box} from "@mui/material";
+    import React from 'react';
+    import Chart from 'react-apexcharts';
+    import { Box } from '@mui/material';
 
-
-    const Dashboard = () => {
-
+    const Dashboard = ({ filters, chartOptions }) => {
     return (
-        <Box m="20px">
-        {/* HEADER */}
-        <Box display="flex" justifyContent="space-between" alignItems="center">
-            
-        </Box>
+        <Box>
+        {chartOptions && chartOptions.series && (
+            <Chart
+            options={chartOptions}
+            series={chartOptions.series}
+            type={chartOptions.chart.type}
+            height={350}
+            />
+        )}
         </Box>
     );
     };
